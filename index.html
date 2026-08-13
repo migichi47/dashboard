@@ -8,20 +8,51 @@
   </head>
   <body>
     <!-- header -->
-    <div>
+    <div class="header">
       <div class="left-section">
         <h1>CampusKart</h1>
       </div>
+
       <div class="middle-section">
-        <input type="text" />
-        <button>Filter</button>
+        <div class="search-bar">
+          <span class="search-icon"> &#128269;</span>
+          <input type="text" placeholder="Search items..." />
+        </div>
+        <button class="search-btn">Filter</button>
       </div>
+
       <div class="right-section">
-        <div class="profile-photo">
-          <img src="" alt="" />
+        <div class="profile">
+          <img class="profile-icon" src="images/profile-photo.jpg" alt="" />
           <p>Hi! Alex</p>
         </div>
-        <div class="cart-icon"></div>
+        <div class="cart-icon">Cart</div>
+      </div>
+    </div>
+
+    <!-- hero section -->
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-link-container">
+          <a href="" class="hero-link hero-link-selected">Home</a>
+          <a href="" class="hero-link">Category</a>
+          <a href="" class="hero-link">Sell</a>
+        </div>
+
+        <h1 class="hero-header">Buy & sell Easily on <span>Campus</span></h1>
+
+        <p>
+          Find great deals on items around campus or sell items to people around
+          campus.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="browse-btn">Browse</button>
+          <button class="sell-item-btn"><span>+</span>Sell an Item</button>
+        </div>
+      </div>
+      <div>
+        <img src="images/hero image.jpg" alt="" />
       </div>
     </div>
   </body>

@@ -1,10 +1,177 @@
 :root {
-  --primary: #4169E1;
+  --primary: #294db9;
   --secondary: #FF0000;
   --tertiary: #CCAA2B;
   --neutral: #F8F9FA;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--neutral);
+  font-family: sans-serif;
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--neutral);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 60px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.434);
+  align-items: center;
+}
+
+.middle-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-bar {
+  height: 35px;
+  background-color: var(--neutral);
+  padding: 5px 0 5px 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-shrink: 1;
+}
+
+.middle-section input {
+  border: none;
+  outline: none;
+  background: 0;
+}
+
+.search-btn {
+  color: var(--primary);
+  font-weight: 600;
+  height: 30px;
+  border: 0;
+  background-color: var(--neutral);
+  width: 65px;
+  border-radius: 6px;
+}
+
+.search-btn:hover {
+  background-color: var(--primary);
+  color: var(--neutral);
+}
+
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  padding: 5px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.profile:hover {
+  background-color: rgba(255, 255, 255, 0.149);
+}
+
+.profile-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+
+
+
+/* hero */
+.hero {
+  background-color: var(--primary);
+  position: relative;
+  top: 60px;
+  padding: 100px 60px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: var(--neutral);
+}
+
+.hero-header span {
+  color: var(--tertiary);
+}
+
+.hero-link-container {
+  display: flex;
+  gap: 5px;
+}
+
+.hero-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.886);
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+
+.hero-link:hover {
+  color: white;
+}
+
+.hero-link-selected {
+  background-color: var(--tertiary);
+  color: rgb(78, 62, 0);
+}
+
+.hero-link-selected:hover {
+  color: rgb(78, 62, 0);
+  background-color: #cca92bc3;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  width: fit-content;
+}
+
+.hero-buttons button {
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  font-weight: 600;
+} 
+
+.browse-btn {
+  background-color: var(--tertiary);
+  color: rgb(78, 62, 0);
+  border: 0;
+}
+
+.sell-item-btn {
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.sell-item-btn span {
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 0 3px;
+  margin-right: 5px;
 }
