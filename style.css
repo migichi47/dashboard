@@ -211,7 +211,6 @@ body {
 .browse-categories {
   position: relative;
   top: 60px;
-  margin-bottom: 1200px; /* to be removes */
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -249,12 +248,24 @@ body {
   overflow: hidden;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.16);
   border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
-.category-card img {
+.category-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.284);
+}
+
+/* group hover */
+.category-card:hover .category-card-image {
+  transform: scale(1.05);
+}
+
+.category-card-image {
   height: 72%;
   object-fit: cover;
   width: 100%;
+  transition: transform 0.5s ease;
 }
 
 .category-card-description {
