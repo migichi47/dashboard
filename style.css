@@ -97,6 +97,13 @@ body {
 
 .cart-icon {
   font-size: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.cart-icon:hover {
+  background-color: rgba(255, 255, 255, 0.062);
 }
 
 
@@ -185,6 +192,7 @@ body {
   width: 150px;
   border-radius: 10px;
   font-weight: 600;
+  cursor: pointer;
 } 
 
 .browse-btn {
@@ -193,9 +201,17 @@ body {
   border: 0;
 }
 
+.browse-btn:hover {
+  background-color: #cca92bc4;
+}
+
 .sell-item-btn {
   border: 1px solid var(--secondary);
   color: var(--secondary);
+}
+
+.sell-item-btn:hover {
+  background: none;
 }
 
 .sell-item-btn span {
