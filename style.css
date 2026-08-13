@@ -98,13 +98,42 @@ body {
 
 
 /* hero */
-.hero {
+.hero-container {
   background-color: var(--primary);
   position: relative;
   top: 60px;
-  padding: 100px 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  padding: 80px 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-height: 500px;
+  max-width: 1200px;
+}
+
+.hero-image-container {
+  overflow: hidden;
+  max-height:100%;
+  min-width: 100%;
+  border-radius: 10px;
+}
+
+.hero-image-container img {
+  position: relative;
+  top: -200px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1000px) {
+  .hero-image-container img {
+    top: -50px;
+  }
 }
 
 .hero-content {
@@ -112,6 +141,7 @@ body {
   flex-direction: column;
   gap: 30px;
   color: var(--neutral);
+  max-width: 500px;
 }
 
 .hero-header span {
