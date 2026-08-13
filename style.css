@@ -258,6 +258,7 @@ body {
 }
 
 .category-card-description {
+  height: 28%;
   background-color: var(--neutral);
   display: flex;
   justify-content: space-between;
